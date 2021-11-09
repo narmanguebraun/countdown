@@ -1,0 +1,48 @@
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* COUNTDOWN */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+*{box-sizing: border-box; }
+html {font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;}
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ccc;
+  background-color:#161318;
+}
+
+a {text-decoration: none;color: #000;border-bottom:solid 1px #000;}
+a:hover {color: #c91248;border-bottom: 1px solid #c91248;}
+a:hover {-webkit-transition: color 400ms ease-out;-moz-transition: color 400ms ease-out;}
+
+::-moz-selection {background: rgba(200, 200, 200, 1.0); color: #000; text-shadow: none;}
+::selection {background: rgba(200, 200, 200, 1.0);color: #000;text-shadow: none;}
+
+/* Site */
+body {margin: 0;min-height: 100vh;overflow-y: hidden;display: flex;align-items: center;}
+.container {min-width: 400px;  max-width:500px;  margin: 0 auto;  padding: 50px;  z-index: 2; display: flex;justify-content: center;}
+h1 {font-size: 13px;margin: 60px;text-transform:uppercase;letter-spacing: 0.08em;}
+.input-container {position: relative;}
+.form {width: 420px;}
+input {width: 420px; margin: 10px auto; padding: 10px;border: 1px solid #ccc; background: #fff; outline: none;}
+/* Button */
+button {display:block;height: 40px;line-height:40px;padding: 0 30px;border: 1px solid #ccc;font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;font-size: 13px;text-transform: uppercase;background: #161318;color: #ccc;cursor: pointer;outline: none;}
+button:hover {background: #211e25;filter: brightness(110%);}
+.btn-submit{margin:30px 0;}
+.btn-reset{margin: 60px auto;}
+/* Countdown */
+ul {display:flex; justify-content: center;}
+li {font-size: 10px;list-style-type: none;padding: 10px;text-transform: uppercase;}
+li span {font-size: 60px;text-align: right;}
+/* Complete */
+.complete {position: relative;top: 60px;}
+.complete-title {animation: complete 4s infinite;}
+@keyframes complete {
+  0% {color: rgb(99, 112, 110);}
+  25% {color: rgb(167, 174, 177);}
+  50% {color: rgb(201, 18, 72);transform: scale(1.5);}
+  75% {color: rgb(34, 31, 50);}
+  100% {color: rgb(227, 106, 114);}
+}
